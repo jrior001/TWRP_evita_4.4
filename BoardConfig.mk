@@ -34,7 +34,7 @@ TARGET_BOARD_INFO_FILE ?= device/htc/evita/board-info.txt
 TARGET_BOOTLOADER_BOARD_NAME := evita
 
 # Kernel
-TARGET_KERNEL_CONFIG := elite_defconfig
+TARGET_PREBUILT_KERNEL := device/htc/evita/kernel
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/htc/evita/bluetooth
@@ -78,7 +78,7 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_VOLD_MAX_PARTITIONS := 36
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/htc/evita/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/htc/evita/rootdir/etc/twrp.fstab
 
 # TWRP
 DEVICE_RESOLUTION := 720x1280
